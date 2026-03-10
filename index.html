@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pomodoro Timer</h1>
+        </header>
+        
+        <div class="timer-container">
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="pomodoro">专注</button>
+                <button class="mode-btn" data-mode="shortBreak">短休息</button>
+                <button class="mode-btn" data-mode="longBreak">长休息</button>
+            </div>
+            
+            <div class="timer-display">
+                <div class="time" id="timer">25:00</div>
+                <div class="mode-label" id="modeLabel">专注时间</div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="startBtn">开始</button>
+                <button class="control-btn" id="resetBtn">重置</button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">已完成</span>
+                    <span class="stat-value" id="completedPomodoros">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>保持专注，高效工作</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
